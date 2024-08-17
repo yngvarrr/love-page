@@ -46,6 +46,10 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+  margin: 0 auto;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -74,8 +78,8 @@ table {
   width: 200px;
 }
 
-.foto3 {
-  width: 300px;
+.print {
+  width: 270px;
   margin-bottom: 20px;
 }
 
