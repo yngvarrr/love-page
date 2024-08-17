@@ -78,7 +78,7 @@ function App() {
 
         <div
           ref={section2Ref}
-          style={{ height: "103vh", background: "#006400", padding: "20px" }}
+          style={{ height: "105vh", background: "#006400", padding: "20px" }}
         >
           <h1>Como tudo começou...</h1>
           <p>
@@ -186,7 +186,7 @@ function App() {
         </div>
         <div
           ref={section8Ref}
-          style={{ height: "106vh", background: "#003366", padding: "20px" }}
+          style={{ height: "108vh", background: "#003366", padding: "20px" }}
         >
           <h1>Apenas o começo</h1>
           <p></p>
