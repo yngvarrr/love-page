@@ -33,9 +33,9 @@ const Timer = ({ startDate }) => {
 
   return (
     <div className="timer">
-      <h2>Oi meu amor!</h2>
-      <p>Nós estamos juntos há {timeElapsed.days || 0} dias, {timeElapsed.hours || 0} horas,{" "}
-      {timeElapsed.minutes || 0} minutos e {timeElapsed.seconds || 0} segundos</p>
+      <p>Por {timeElapsed.days || 0} dias, {timeElapsed.hours || 0} horas,{" "}
+      {timeElapsed.minutes || 0} minutos e {timeElapsed.seconds || 0} segundos, você me proporcionou muitas coisas novas, várias experiências que eu sempre quis viver com alguém que eu amasse e esteve comigo em meus altos e baixos.</p>
+      <p>Eu posso não ser perfeito, mas com certeza estou sempre dando o melhor que posso para ser tudo que uma mulher como você merece! E que continuemos sendo muito felizes e apaixonados por mais outros milhões de minutos, e com eles possamos construir coisas cada vez mais incríveis juntos!</p>
     </div>
   );
 };

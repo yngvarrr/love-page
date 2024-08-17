@@ -12,6 +12,7 @@ import shocked from "./assets/shocked.png";
 import in_love from "./assets/in_love.png";
 import expect from "./assets/expect.png";
 import love2 from "./assets/love2.png";
+import final from "./assets/final.jpeg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Mosaico from "./components/Mosaico/Mosaico";
 import Timer from "./components/Timer/Timer";
@@ -133,7 +134,7 @@ function App() {
         </div>
         <div
           ref={section5Ref}
-          style={{ height: "100vh", background: "lightcoral", padding: "20px" }}
+          style={{ height: "100vh", background: "#4A5568", padding: "20px" }}
         >
           <h1>Finalmente!!!!</h1>
           <p>
@@ -149,7 +150,7 @@ function App() {
         </div>
         <div
           ref={section6Ref}
-          style={{ height: "100vh", background: "lightcoral", padding: "20px" }}
+          style={{ height: "100vh", background: "#2C3E50", padding: "20px" }}
         >
           <h1>Viramos um casal de fato!</h1>
           <p>
@@ -167,7 +168,7 @@ function App() {
           ref={section7Ref}
           style={{
             height: "100vh",
-            background: "lightcoral",
+            background: "#8A9BAE",
             padding: "20px",
             alignItems: "center",
           }}
@@ -185,13 +186,13 @@ function App() {
         </div>
         <div
           ref={section8Ref}
-          style={{ height: "100vh", background: "lightcoral", padding: "20px" }}
+          style={{ height: "105vh", background: "#003366", padding: "20px" }}
         >
           <h1>Apenas o começo</h1>
-          <Fab variant="extended" color="primary" onClick={scrollToSection4}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            Go to Section 4
-          </Fab>
+          <p></p>
+          <Timer startDate={startDate} />
+          <img src={final} alt="" className="foto"/>
+          <h3>Te amo meu amor, obrigado por tanto, você é minha eterna fração de segundo!</h3>
         </div>
       </div>
     </>
