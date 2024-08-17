@@ -34,8 +34,8 @@ const Timer = ({ startDate }) => {
 
   return (
     <div className="timer">
-      <h2>Juntos há</h2>
-      <p>{timeElapsed.days || 0} dias, {timeElapsed.hours || 0} horas,{" "}
+      <h2>Oi meu amor!</h2>
+      <p>Nós estamos juntos há {timeElapsed.days || 0} dias, {timeElapsed.hours || 0} horas,{" "}
       {timeElapsed.minutes || 0} minutos e {timeElapsed.seconds || 0} segundos</p>
     </div>
   );
