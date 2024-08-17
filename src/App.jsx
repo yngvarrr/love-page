@@ -49,7 +49,7 @@ function App() {
           </Box>
         </Box>
 
-        <div ref={section2Ref} style={{ height: "100vh", background: "#006400", padding: "20px" }}>
+        <div ref={section2Ref} style={{ height: "110vh", background: "#006400", padding: "20px" }}>
           <h1>Como tudo começou...</h1>
           <p>Depois de meses interagindo e dando em cima, decidi tomar atitude de chamar aquela gata pra sair!</p>
           <img className="print" src={first} alt="" srcset="" />
