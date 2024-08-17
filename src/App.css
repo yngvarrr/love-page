@@ -54,14 +54,15 @@ h1 {
   margin: 0 auto;
 }
 
-/* Garante que a página ocupe toda a altura e largura da tela */
 html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Evita rolagem horizontal */
+  overflow-x: hidden;
+  text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -118,30 +119,16 @@ html, body, #root {
   overflow-x: hidden;
 }
 
-/* Estilo para a seção principal */
-.containerM {
-  width: 100%;
-  height: 100vh; /* Faz com que a altura ocupe 100% da altura da tela */
-  overflow-x: hidden; /* Evita rolagem horizontal */
-}
-
-/* Estilo para as seções dentro da containerM */
 .containerM > div {
   width: 100%;
-  box-sizing: border-box; /* Inclui padding e border na largura total */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
 }
 
-/* Estilo para os botões FAB */
+.foto, .print, .emoji {
+  max-width: 100%;
+  height: auto; 
+}
+
 .MuiFab-root {
-  margin: 0; /* Remove margens padrão dos botões FAB */
-}
-
-/* Ajusta o layout dos botões FAB dentro das seções */
-section > .MuiBox-root {
-  position: absolute;
-  bottom: 20px; /* Posiciona o botão na parte inferior da seção */
+  margin: 0; 
 }
