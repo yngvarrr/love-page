@@ -130,7 +130,7 @@ function App() {
 
         <div
           ref={section6Ref}
-          style={{ height: "100vh", background: "#2C3E50", padding: "20px" }}
+          style={{ height: "100vh", background: "lightcoral", padding: "20px" }}
         >
           <h1>Viramos um casal de fato!</h1>
           <p>
