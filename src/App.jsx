@@ -9,6 +9,8 @@ import second from "./assets/second.jpeg";
 import shy from "./assets/shy.png";
 import happy from "./assets/happy.png";
 import shocked from "./assets/shocked.png";
+import in_love from "./assets/in_love.png";
+import expect from "./assets/expect.png";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Timer from "./components/Timer/Timer";
 import "./App.css";
@@ -20,6 +22,12 @@ function App() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
   const section4Ref = useRef(null);
+  const section5Ref = useRef(null);
+  const section6Ref = useRef(null);
+  const section7Ref = useRef(null);
+  const section8Ref = useRef(null);
+  const section9Ref = useRef(null);
+  const section10Ref = useRef(null);
 
   const scrollToSection2 = () => {
     section2Ref.current.scrollIntoView({ behavior: "smooth" });
@@ -33,23 +41,47 @@ function App() {
     section4Ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToSection5 = () => {
+    section5Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSection6 = () => {
+    section6Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSection7 = () => {
+    section7Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSection8 = () => {
+    section8Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSection9 = () => {
+    section9Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSection10 = () => {
+    section10Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div>
-        {/* Primeira Seção com cor de fundo mais escura */}
         <Box sx={{ height: "100vh", background: "#003366", p: 2, color: "white" }}>
           <img src={pic} alt="" className="foto" />
-          <Timer startDate={startDate} />
+          <h1>Oi amor!</h1>
+          <p>Bastante tempo que estamos juntos ne? Vamos fazer uma viagem!</p>
           <Box sx={{ "& > :not(style)": { m: 1 } }}>
           <img src={love} alt="" className="emoji" />
             <Fab variant="extended" color="primary" onClick={scrollToSection2}>
               <FavoriteIcon sx={{ mr: 1 }} />
-              Nossa história
+              Como tudo começou
             </Fab>
           </Box>
         </Box>
 
-        <div ref={section2Ref} style={{ height: "110vh", background: "#006400", padding: "20px" }}>
+        <div ref={section2Ref} style={{ height: "100vh", background: "#006400", padding: "20px" }}>
           <h1>Como tudo começou...</h1>
           <p>Depois de meses interagindo e dando em cima, decidi tomar atitude de chamar aquela gata pra sair!</p>
           <img className="print" src={first} alt="" srcset="" />
@@ -61,9 +93,9 @@ function App() {
         </div>
 
         <div ref={section3Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
-          <h1>Section 3</h1>
+          <h1>Triste...</h1>
           <p>Infelizmente, a futura mestra estava muito ocupada e não deu pra marcar nosso primeiro date...</p>
-          <img src={scared} alt="" srcset="" className="emoji" />
+          <img src={shocked} alt="" srcset="" className="emoji" />
           <h2>PORÉM!!!!</h2>
           <p>A esperança é a última que morre...</p>
           <img src={shy} alt="" className="emoji"/>
@@ -74,14 +106,59 @@ function App() {
         </div>
 
         <div ref={section4Ref} style={{ height: "100vh", background: "#C90505", padding: "20px" }}>
-          <h1>Section 4</h1>
+          <h1>Plot Twist!!!</h1>
           <p>Pelo visto, ela tava interessada nesse date, e algumas semanas depois...</p>
           <img src={second} alt="" className="print"/>
           <p>E então, nosso primeiro date estaria marcado, 14 de outubro era o grande dia do meu primeiro encontro!!!!</p>
           <img src={happy} alt="" className="emoji"/>
-          <Fab variant="extended" color="primary" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Fab variant="extended" color="primary" onClick={scrollToSection5}>
             <FavoriteIcon sx={{ mr: 1 }} />
-            Back to Top
+            Massa!!!!!! e ai?????
+          </Fab>
+        </div>
+        <div ref={section5Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Finalmente!!!!</h1>
+          <p>O encontro foi incrível, conversamos bastante e acabamos ficando</p>
+          <img src={in_love} alt="" className="emoji"/>
+          <p>E assim continuamos por 4 incríveis meses, até que...</p>
+          <Fab variant="extended" color="primary" onClick={scrollToSection6}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Ate que o que????????
+          </Fab>
+        </div>
+        <div ref={section6Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Section 6</h1>
+          <Fab variant="extended" color="primary" onClick={scrollToSection7}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Go to Section 4
+          </Fab>
+        </div>
+        <div ref={section7Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Section 7</h1>
+          <Fab variant="extended" color="primary" onClick={scrollToSection8}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Go to Section 4
+          </Fab>
+        </div>
+        <div ref={section8Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Section 8</h1>
+          <Fab variant="extended" color="primary" onClick={scrollToSection4}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Go to Section 4
+          </Fab>
+        </div>
+        <div ref={section9Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Section 9</h1>
+          <Fab variant="extended" color="primary" onClick={scrollToSection4}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Go to Section 4
+          </Fab>
+        </div>
+        <div ref={section10Ref} style={{ height: "100vh", background: "lightcoral", padding: "20px" }}>
+          <h1>Section 10</h1>
+          <Fab variant="extended" color="primary" onClick={scrollToSection4}>
+            <FavoriteIcon sx={{ mr: 1 }} />
+            Go to Section 4
           </Fab>
         </div>
       </div>
