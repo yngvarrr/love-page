@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, blockquote, pre,
+div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -54,12 +54,16 @@ h1 {
   margin: 0 auto;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal */
   text-align: center;
 }
+
+
 
 .logo {
   height: 6em;
@@ -108,4 +112,27 @@ h1 {
 
 .read-the-docs {
   color: #888;
+}
+
+.containerM {
+  width: 100%;
+  height: 100vh; /* Faz com que a altura ocupe 100% da altura da tela */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Garante que as seções dentro da containerM ocupem toda a largura da tela */
+.containerM > div {
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo para as imagens */
+.foto, .print, .emoji {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+  height: auto; /* Mantém a proporção da altura */
+}
+
+/* Estilo para os botões FAB */
+.MuiFab-root {
+  margin: 0; /* Remove margens padrão dos botões FAB */
 }

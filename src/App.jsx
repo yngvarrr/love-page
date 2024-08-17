@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <section>
+    <section className="containerM">
       <div>
         <Box
           sx={{ height: "102vh", background: "#003366", p: 2, color: "white" }}
