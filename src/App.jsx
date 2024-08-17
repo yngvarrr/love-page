@@ -40,12 +40,12 @@ function App() {
     <section className="containerM">
       <div>
         <Box
-          sx={{ height: "100vh", background: "#003366", p: 2, color: "white" }}
+          sx={{ height: "100vh", background: "#003366", p: 2, color: "white", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <img src={pic} alt="" className="foto" />
           <h1>Oi amor!</h1>
           <p>Bastante tempo que estamos juntos ne? Vamos fazer uma viagem!</p>
-          <Box sx={{ "& > :not(style)": { m: 1 } }}>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
             <img src={love} alt="" className="emoji" />
             <Fab variant="extended" color="primary" onClick={() => scrollToSection(section2Ref)}>
               <FavoriteIcon sx={{ mr: 1 }} />
@@ -56,7 +56,7 @@ function App() {
 
         <div
           ref={section2Ref}
-          style={{ height: "100vh", background: "#006400", padding: "20px" }}
+          style={{ height: "100vh", background: "#006400", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Como tudo começou...</h1>
           <p>
@@ -65,15 +65,17 @@ function App() {
           </p>
           <img className="print" src={first} alt="" />
           <img src={scared} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section3Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            Ta mas e ai????
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section3Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              Ta mas e ai????
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section3Ref}
-          style={{ height: "100vh", background: "lightcoral", padding: "20px" }}
+          style={{ height: "100vh", background: "lightcoral", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Triste...</h1>
           <p>
@@ -84,17 +86,19 @@ function App() {
           <h2>PORÉM!!!!</h2>
           <p>A esperança é a última que morre...</p>
           <img src={shy} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section4Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            hmmmmm e agora então?
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section4Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              hmmmmm e agora então?
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section4Ref}
-          style={{ height: "100vh", background: "#C90505", padding: "20px" }}
+          style={{ height: "100vh", background: "#C90505", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
-          <h1>O sonho tá vivo!!!</h1>
+          <h1>Plot Twist!!!</h1>
           <p>
             Pelo visto, ela tava interessada nesse date, e algumas semanas
             depois...
@@ -105,15 +109,17 @@ function App() {
             grande dia do meu primeiro encontro!!!!
           </p>
           <img src={happy} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section5Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            Massa!!!!!! e ai?????
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section5Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              Massa!!!!!! e ai?????
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section5Ref}
-          style={{ height: "100vh", background: "#4A5568", padding: "20px" }}
+          style={{ height: "100vh", background: "#4A5568", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Finalmente!!!!</h1>
           <p>
@@ -122,15 +128,17 @@ function App() {
           <img src={in_love} alt="" className="emoji" />
           <p>E assim continuamos por 4 incríveis meses, até que...</p>
           <img src={expect} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section6Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            Ate que o que????????
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section6Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              Ate que o que????????
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section6Ref}
-          style={{ height: "100vh", background: "#2C3E50", padding: "20px" }}
+          style={{ height: "100vh", background: "#2C3E50", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Viramos um casal de fato!</h1>
           <p>
@@ -139,15 +147,17 @@ function App() {
             parceira e melhor amiga!
           </p>
           <img src={love2} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section7Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            aeeee, deu tudo certo, mas só isso?
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section7Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              aeeee, deu tudo certo, mas só isso?
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section7Ref}
-          style={{ height: "100vh", background: "#8A9BAE", padding: "20px" }}
+          style={{ height: "100vh", background: "#8A9BAE", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Claro que não!!!!</h1>
           <p>
@@ -155,15 +165,17 @@ function App() {
             construímos boas memórias juntos!
           </p>
           <Mosaico />
-          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section8Ref)}>
-            <FavoriteIcon sx={{ mr: 1 }} />
-            O futuro
-          </Fab>
+          <Box sx={{ "& > :not(style)": { m: 1 }, position: 'absolute', bottom: 20 }}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section8Ref)}>
+              <FavoriteIcon sx={{ mr: 1 }} />
+              O futuro
+            </Fab>
+          </Box>
         </div>
 
         <div
           ref={section8Ref}
-          style={{ height: "108vh", background: "#003366", padding: "20px" }}
+          style={{ height: "108vh", background: "#003366", padding: "20px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
           <h1>Apenas o começo</h1>
           <p></p>
