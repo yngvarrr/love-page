@@ -30,46 +30,24 @@ function App() {
   const section7Ref = useRef(null);
   const section8Ref = useRef(null);
 
-  const scrollToSection2 = () => {
-    section2Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection3 = () => {
-    section3Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection4 = () => {
-    section4Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection5 = () => {
-    section5Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection6 = () => {
-    section6Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection7 = () => {
-    section7Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSection8 = () => {
-    section8Ref.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionRef) => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <section className="containerM">
       <div>
         <Box
-          sx={{ height: "102vh", background: "#003366", p: 2, color: "white" }}
+          sx={{ height: "100vh", background: "#003366", p: 2, color: "white" }}
         >
           <img src={pic} alt="" className="foto" />
           <h1>Oi amor!</h1>
           <p>Bastante tempo que estamos juntos ne? Vamos fazer uma viagem!</p>
           <Box sx={{ "& > :not(style)": { m: 1 } }}>
             <img src={love} alt="" className="emoji" />
-            <Fab variant="extended" color="primary" onClick={scrollToSection2}>
+            <Fab variant="extended" color="primary" onClick={() => scrollToSection(section2Ref)}>
               <FavoriteIcon sx={{ mr: 1 }} />
               Como tudo começou
             </Fab>
@@ -78,16 +56,16 @@ function App() {
 
         <div
           ref={section2Ref}
-          style={{ height: "105vh", background: "#006400", padding: "20px" }}
+          style={{ height: "100vh", background: "#006400", padding: "20px" }}
         >
           <h1>Como tudo começou...</h1>
           <p>
             Depois de meses interagindo e dando em cima, decidi tomar atitude de
             chamar aquela gata pra sair!
           </p>
-          <img className="print" src={first} alt="" srcset="" />
-          <img src={scared} alt="" srcset="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={scrollToSection3}>
+          <img className="print" src={first} alt="" />
+          <img src={scared} alt="" className="emoji" />
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section3Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             Ta mas e ai????
           </Fab>
@@ -102,11 +80,11 @@ function App() {
             Infelizmente, a futura mestra estava muito ocupada e não deu pra
             marcar nosso primeiro date...
           </p>
-          <img src={shocked} alt="" srcset="" className="emoji" />
+          <img src={shocked} alt="" className="emoji" />
           <h2>PORÉM!!!!</h2>
           <p>A esperança é a última que morre...</p>
           <img src={shy} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={scrollToSection4}>
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section4Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             hmmmmm e agora então?
           </Fab>
@@ -127,11 +105,12 @@ function App() {
             grande dia do meu primeiro encontro!!!!
           </p>
           <img src={happy} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={scrollToSection5}>
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section5Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             Massa!!!!!! e ai?????
           </Fab>
         </div>
+
         <div
           ref={section5Ref}
           style={{ height: "100vh", background: "#4A5568", padding: "20px" }}
@@ -143,11 +122,12 @@ function App() {
           <img src={in_love} alt="" className="emoji" />
           <p>E assim continuamos por 4 incríveis meses, até que...</p>
           <img src={expect} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={scrollToSection6}>
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section6Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             Ate que o que????????
           </Fab>
         </div>
+
         <div
           ref={section6Ref}
           style={{ height: "100vh", background: "#2C3E50", padding: "20px" }}
@@ -159,19 +139,15 @@ function App() {
             parceira e melhor amiga!
           </p>
           <img src={love2} alt="" className="emoji" />
-          <Fab variant="extended" color="primary" onClick={scrollToSection7}>
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section7Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             aeeee, deu tudo certo, mas só isso?
           </Fab>
         </div>
+
         <div
           ref={section7Ref}
-          style={{
-            height: "100vh",
-            background: "#8A9BAE",
-            padding: "20px",
-            alignItems: "center",
-          }}
+          style={{ height: "100vh", background: "#8A9BAE", padding: "20px" }}
         >
           <h1>Claro que não!!!!</h1>
           <p>
@@ -179,19 +155,20 @@ function App() {
             construímos boas memórias juntos!
           </p>
           <Mosaico />
-          <Fab variant="extended" color="primary" onClick={scrollToSection8}>
+          <Fab variant="extended" color="primary" onClick={() => scrollToSection(section8Ref)}>
             <FavoriteIcon sx={{ mr: 1 }} />
             O futuro
           </Fab>
         </div>
+
         <div
           ref={section8Ref}
-          style={{ height: "100vh", background: "#003366", padding: "20px" }}
+          style={{ height: "108vh", background: "#003366", padding: "20px" }}
         >
           <h1>Apenas o começo</h1>
           <p></p>
           <Timer startDate={startDate} />
-          <img src={final} alt="" className="foto"/>
+          <img src={final} alt="" className="foto" />
           <h3>Te amo meu amor, obrigado por tanto, você é minha eterna fração de segundo!</h3>
         </div>
       </div>
