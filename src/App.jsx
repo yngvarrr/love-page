@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <>
+    <section>
       <div>
         <Box
           sx={{ height: "102vh", background: "#003366", p: 2, color: "white" }}
@@ -195,7 +195,7 @@ function App() {
           <h3>Te amo meu amor, obrigado por tanto, você é minha eterna fração de segundo!</h3>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
