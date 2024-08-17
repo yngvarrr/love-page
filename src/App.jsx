@@ -94,7 +94,7 @@ function App() {
           ref={section4Ref}
           style={{ height: "100vh", background: "#C90505", padding: "20px" }}
         >
-          <h1>Plot Twist!!!</h1>
+          <h1>O sonho tá vivo!!!</h1>
           <p>
             Pelo visto, ela tava interessada nesse date, e algumas semanas
             depois...
