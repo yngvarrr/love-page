@@ -28,7 +28,6 @@ const Timer = ({ startDate }) => {
       setTimeElapsed(calculateTimeElapsed());
     }, 1000);
 
-    // Limpeza do intervalo quando o componente for desmontado
     return () => clearInterval(timer);
   }, [startDate]);
 

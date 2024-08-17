@@ -1,0 +1,13 @@
+.mosaic-container {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .mosaic-image {
+    width: 115%;  /* Aumentei a largura da imagem para 115% */
+    height: 115%; /* Aumentei a altura da imagem para 115% */
+    display: block;
+    margin: 0 auto;  /* Centraliza a imagem dentro do grid item */
+    object-fit: cover; /* Assegura que a imagem preencha o espaço sem distorção */
+  }  
+  
